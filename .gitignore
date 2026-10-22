@@ -10,9 +10,10 @@ terraform/*.tfplan
 # SSH keys (private keys must never be committed)
 *.pem
 terra-key-ansible.pem
-# Private key used by the lab (public key .pub is safe to commit)
 terraform/terra-key-ansible
 ~/keys/terra-key-ansible
+# Public key is per-learner (generated locally) — don't commit one person's key for everyone
+terraform/terra-key-ansible.pub
 
 # Ansible
 *.retry
